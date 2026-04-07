@@ -1,17 +1,15 @@
 aid: honeywell
-url: 
-  https://raw.githubusercontent.com/api-evangelist/honeywell/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/honeywell/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis:
   - aid: honeywell:honeywell-api
     name: Honeywell Forge API
     tags:
-      - Industrial IoT
-      - Building Automation
       - Aerospace
+      - Building Automation
+      - Industrial IoT
       - Manufacturing
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.honeywell.com
     humanURL: https://developer.honeywell.com/
     properties:
