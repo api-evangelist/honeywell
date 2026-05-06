@@ -8,32 +8,58 @@ alignedWith:
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 provider: Honeywell
 providerId: honeywell
-publisherName: Honeywell
-serviceCategory: API
+publisherName: Honeywell International Inc.
+serviceCategory: Industrial IoT / Building Automation / Aerospace
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
   - Aerospace
   - Building Automation
   - Industrial IoT
   - Manufacturing
   - FinOps
-  - Cost Management
   - FOCUS
-description: FinOps framework definition for the Honeywell API surface. Provides a FOCUS-aligned mapping
-  for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
+notes: Honeywell sells industrial / building / aerospace SaaS (Honeywell Forge, Connected Enterprise) on
+  enterprise contracts. The FinOps shape is annual subscription + per-connected-asset fees + optional
+  professional services. Meters below capture this shape; rates are bilateral and not publicly disclosed.
+description: 'FOCUS-aligned FinOps stub for Honeywell. Enterprise subscription plus per-connected-asset
+  metering, with rates set in the Master Services Agreement.'
+sources:
+  - https://www.honeywell.com/us/en
+billingModel:
+  pricingCategory: Subscription + Per-Asset (per enterprise agreement)
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+    - Purchase
+    - Usage
+    - Tax
+    - Adjustment
+  chargeFrequency: Recurring
+focusColumns:
+  ServiceName: Honeywell Forge / Connected Enterprise
+  ServiceCategory: Industrial IoT / Building Automation / Aerospace
+  ProviderName: Honeywell International Inc.
+  PublisherName: Honeywell International Inc.
+  InvoiceIssuerName: Honeywell International Inc.
+  PricingCategory: Subscription + Per-Asset
+  PricingUnit: asset
+  BillingCurrency: USD
+  ChargeCategory: Usage
 principles:
   - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
+    description: Use Honeywell Forge dashboards, exports, and connected-asset inventory APIs to track
+      asset count, ingestion volume, and module utilization. Reconcile against the annual entitlement.
   - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
+    description: Allocate Forge spend by site, building, plant, or tail number using the asset hierarchy
+      that drives the contract's per-asset billing line.
   - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
+    description: Levers are deactivating unused assets / sites at renewal, consolidating Forge modules
+      to bundle pricing, and tuning data ingestion intervals to stay within the entitlement tier.
   - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
+    description: Site / facility owners are accountable for their connected-asset footprint; central
+      IT / OT owns the master agreement and renewal calendar.
 domains:
   - name: Understand Usage and Cost
     capabilities:
@@ -53,80 +79,60 @@ domains:
       - Architecting for Cloud
       - Rate Optimization
       - Workload Optimization
-      - Cloud Sustainability
       - Licensing and SaaS
   - name: Manage the FinOps Practice
     capabilities:
       - FinOps Practice Operations
-      - FinOps Education and Enablement
       - Invoicing and Chargeback
       - Onboarding Workloads
       - Intersecting Disciplines
-billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
-  billingCurrency: USD
-  chargeCategories:
-    - Usage
-    - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
-focusColumns:
-  ServiceName: Honeywell
-  ServiceCategory: Developer Tools / API
-  ProviderName: Honeywell
-  PublisherName: Honeywell
-  InvoiceIssuerName: Honeywell
-  PricingCategory: Usage-Based
-  PricingUnit: request
-  BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
-    aggregation: sum
+  - name: connected_assets
+    description: Number of connected industrial / building / aerospace assets under management
+    unit: asset
+    aggregation: max
     dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
+      - tenant
+      - site
+      - asset_type
+  - name: ingested_telemetry
+    description: Volume of telemetry ingested into Forge
     unit: GB
     aggregation: sum
     dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
+      - tenant
+      - site
+      - asset_type
+  - name: subscription_fee
+    description: Annual subscription fee for Forge / Connected Enterprise modules
+    unit: year
     aggregation: sum
     dimensions:
-      - api
-      - endpoint
-      - tier
+      - tenant
+      - module
+  - name: professional_services
+    description: Honeywell Professional Services engagements
+    unit: hour
+    aggregation: sum
+    dimensions:
+      - tenant
+      - engagement
 apis:
   - name: Honeywell Forge
     baseURL: ''
     tags:
-      - Aerospace
       - Building Automation
       - Industrial IoT
       - Manufacturing
     serviceName: Honeywell Forge
-    serviceCategory: API
+    serviceCategory: Industrial IoT / Building Automation / Aerospace
 unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+  - name: Cost per Connected Asset
+    metric: subscription_fee / connected_assets
+    target: per enterprise agreement
+  - name: Cost per Site
+    metric: subscription_fee / sites
+    target: per enterprise agreement
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
