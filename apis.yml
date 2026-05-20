@@ -39,6 +39,10 @@ apis:
       typically partner-gated and requires registration through the
       Honeywell developer portal.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/Honeywell
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/honeywell
   - url: https://www.honeywell.com
     type: Website
   - url: https://developer.honeywell.com/
