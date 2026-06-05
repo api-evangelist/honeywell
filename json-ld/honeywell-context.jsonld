@@ -1,0 +1,169 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "saref": "https://saref.etsi.org/core/",
+    "honeywell": "https://developer.honeywell.com/vocab#",
+
+    "Organization": "schema:Organization",
+    "name": "schema:name",
+    "url": "schema:url",
+    "description": "schema:description",
+    "industry": "schema:industry",
+    "sameAs": "schema:sameAs",
+
+    "APIService": "schema:WebAPI",
+    "apiDocumentation": "schema:documentation",
+    "apiEndpoint": "schema:serviceUrl",
+    "authMethod": "honeywell:authMethod",
+
+    "Location": {
+      "@id": "honeywell:Location",
+      "@type": "schema:Place",
+      "comment": "A physical site (home or commercial building) containing connected Honeywell devices."
+    },
+    "locationId": {
+      "@id": "honeywell:locationId",
+      "@type": "xsd:string"
+    },
+    "locationName": {
+      "@id": "honeywell:locationName",
+      "@type": "xsd:string"
+    },
+    "devices": {
+      "@id": "honeywell:devices",
+      "@type": "@id"
+    },
+
+    "Device": {
+      "@id": "honeywell:Device",
+      "@type": "saref:Device",
+      "comment": "A physical device (thermostat, camera, sensor) registered to a Honeywell Home location."
+    },
+    "deviceId": {
+      "@id": "honeywell:deviceId",
+      "@type": "xsd:string"
+    },
+    "deviceType": {
+      "@id": "honeywell:deviceType",
+      "@type": "xsd:string"
+    },
+    "deviceName": {
+      "@id": "honeywell:deviceName",
+      "@type": "xsd:string"
+    },
+
+    "Thermostat": {
+      "@id": "honeywell:Thermostat",
+      "@type": "brick:Thermostat",
+      "comment": "A connected thermostat device that can be controlled via the Honeywell Home API."
+    },
+    "currentTemperature": {
+      "@id": "honeywell:currentTemperature",
+      "@type": "xsd:decimal"
+    },
+    "setpointTemperature": {
+      "@id": "honeywell:setpointTemperature",
+      "@type": "xsd:decimal"
+    },
+    "operationMode": {
+      "@id": "honeywell:operationMode",
+      "@type": "xsd:string",
+      "comment": "Operating mode: heat, cool, auto, off."
+    },
+    "fanMode": {
+      "@id": "honeywell:fanMode",
+      "@type": "xsd:string"
+    },
+    "schedule": {
+      "@id": "honeywell:schedule",
+      "@type": "honeywell:Schedule"
+    },
+
+    "Camera": {
+      "@id": "honeywell:Camera",
+      "@type": "saref:Sensor",
+      "comment": "A connected security camera device in a Honeywell Home location."
+    },
+    "cameraConfig": {
+      "@id": "honeywell:cameraConfig",
+      "@type": "honeywell:CameraConfiguration"
+    },
+    "notifications": {
+      "@id": "honeywell:notifications",
+      "@type": "@id"
+    },
+
+    "WaterLeakDetector": {
+      "@id": "honeywell:WaterLeakDetector",
+      "@type": "sosa:Sensor",
+      "comment": "A sensor that detects water leaks and reports history via the Honeywell API."
+    },
+    "sensorHistory": {
+      "@id": "honeywell:sensorHistory",
+      "@type": "@id"
+    },
+
+    "OAuthToken": {
+      "@id": "honeywell:OAuthToken",
+      "@type": "honeywell:AuthCredential",
+      "comment": "An OAuth 2.0 access token issued by the Honeywell authorization server."
+    },
+    "accessToken": {
+      "@id": "honeywell:accessToken",
+      "@type": "xsd:string"
+    },
+    "refreshToken": {
+      "@id": "honeywell:refreshToken",
+      "@type": "xsd:string"
+    },
+    "tokenType": {
+      "@id": "honeywell:tokenType",
+      "@type": "xsd:string"
+    },
+    "expiresIn": {
+      "@id": "honeywell:expiresIn",
+      "@type": "xsd:integer"
+    },
+
+    "EventSubscription": {
+      "@id": "honeywell:EventSubscription",
+      "@type": "honeywell:Subscription",
+      "comment": "A webhook registration that delivers real-time device state change notifications."
+    },
+    "subsystem": {
+      "@id": "honeywell:subsystem",
+      "@type": "xsd:string"
+    },
+    "callbackUrl": {
+      "@id": "honeywell:callbackUrl",
+      "@type": "xsd:anyURI"
+    },
+
+    "ForgeProvider": {
+      "@id": "honeywell:ForgeProvider",
+      "@type": "schema:Organization",
+      "comment": "Honeywell as an industrial technology and connected enterprise platform provider."
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://developer.honeywell.com/",
+      "@type": "schema:Organization",
+      "schema:name": "Honeywell",
+      "schema:url": "https://www.honeywell.com",
+      "schema:description": "Fortune 100 technology company delivering industrial IoT, building automation, aerospace, and performance materials solutions via the Honeywell Forge connected enterprise platform.",
+      "schema:sameAs": [
+        "https://github.com/Honeywell",
+        "https://www.linkedin.com/company/honeywell"
+      ],
+      "schema:industry": "Industrial Technology, Building Automation, Aerospace, Manufacturing"
+    }
+  ]
+}

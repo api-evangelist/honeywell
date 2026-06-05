@@ -1,0 +1,139 @@
+vocabulary:
+  name: Honeywell Industrial Technology Vocabulary
+  description: >-
+    Key terms and concepts used across Honeywell's industrial technology, building
+    automation, aerospace, and Industrial IoT platforms, including the Honeywell
+    Forge connected enterprise ecosystem.
+  version: "1.0"
+  terms:
+    - term: Honeywell Forge
+      definition: >-
+        Honeywell's connected enterprise platform that integrates data from
+        building systems, industrial operations, and aerospace assets to deliver
+        analytics, remote monitoring, and operational intelligence.
+      tags:
+        - platform
+        - IoT
+        - connected-enterprise
+
+    - term: Building Automation System (BAS)
+      definition: >-
+        A networked system of hardware and software that controls a building's
+        HVAC, lighting, fire safety, and security systems, enabling energy
+        efficiency and occupant comfort.
+      tags:
+        - building-automation
+        - HVAC
+        - energy-management
+
+    - term: Industrial IoT (IIoT)
+      definition: >-
+        The application of Internet of Things technologies to industrial settings,
+        connecting sensors, actuators, machines, and control systems to enable
+        real-time monitoring, predictive maintenance, and process optimization.
+      tags:
+        - IoT
+        - manufacturing
+        - industrial
+
+    - term: Thermostat
+      definition: >-
+        A device that senses and controls temperature in a space, available in
+        programmable and connected smart variants that communicate with building
+        management systems and developer APIs via the Honeywell Home platform.
+      tags:
+        - device
+        - HVAC
+        - building-automation
+
+    - term: Location
+      definition: >-
+        A logical grouping in the Honeywell Home API that represents a physical
+        site (home or building) containing one or more connected devices such as
+        thermostats, cameras, and sensors.
+      tags:
+        - API
+        - data-model
+        - building-automation
+
+    - term: OAuth 2.0
+      definition: >-
+        The authorization framework used by Honeywell developer APIs to grant
+        third-party applications delegated access to user devices and data
+        without exposing credentials.
+      tags:
+        - security
+        - authentication
+        - API
+
+    - term: Predictive Maintenance
+      definition: >-
+        A proactive maintenance strategy that uses sensor data, machine learning,
+        and analytics—delivered through platforms like Honeywell Forge—to predict
+        equipment failures before they occur, reducing downtime and maintenance costs.
+      tags:
+        - industrial
+        - analytics
+        - maintenance
+
+    - term: Performance Materials and Technologies (PMT)
+      definition: >-
+        A Honeywell business segment that produces advanced materials including
+        specialty chemicals, fluorocarbons, and process technology licenses for
+        the refining, petrochemical, and industrial sectors.
+      tags:
+        - manufacturing
+        - chemicals
+        - business-segment
+
+    - term: Aerospace
+      definition: >-
+        Honeywell's business segment providing avionics, engines, satellite
+        systems, cockpit and cabin electronics, and ground operations management
+        for commercial aviation, defense, and space applications.
+      tags:
+        - aerospace
+        - avionics
+        - defense
+
+    - term: Digital Twin
+      definition: >-
+        A virtual representation of a physical asset or system—such as a
+        building, aircraft, or industrial plant—that mirrors real-world
+        conditions using live sensor data, enabling simulation and decision
+        support through Honeywell Forge.
+      tags:
+        - IoT
+        - analytics
+        - industrial
+
+    - term: Connected Building
+      definition: >-
+        A facility in which infrastructure systems (HVAC, lighting, access
+        control, fire safety) are networked and managed via a central platform,
+        enabling energy optimization, occupant experience improvements, and
+        remote operation.
+      tags:
+        - building-automation
+        - IoT
+        - energy-management
+
+    - term: Webhook / Event Subscription
+      definition: >-
+        A mechanism in the Honeywell developer API that allows partner
+        applications to receive real-time notifications when device state changes
+        (e.g., thermostat mode change, camera alert, water leak detection) occur.
+      tags:
+        - API
+        - events
+        - integration
+
+    - term: Safety and Productivity Solutions (SPS)
+      definition: >-
+        A Honeywell business segment that manufactures personal protective
+        equipment, gas detection systems, warehouse automation, and scanning/mobility
+        devices for industrial and enterprise customers.
+      tags:
+        - safety
+        - manufacturing
+        - business-segment
