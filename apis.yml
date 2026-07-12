@@ -40,6 +40,8 @@ apis:
       typically partner-gated and requires registration through the
       Honeywell developer portal.
 common:
+  - type: DomainSecurity
+    url: security/honeywell-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/Honeywell
   - type: LinkedIn
