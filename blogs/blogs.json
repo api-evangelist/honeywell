@@ -6,16 +6,18 @@
       "feed_url": "https://www.honeywell.com/us/en/news/rss",
       "title": "Honeywell News",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "fetch_failed: HTTPError"
     },
     {
       "source": "https://developer.honeywell.com",
       "feed_url": "https://developer.honeywell.com",
       "title": "Honeywell Developer Portal",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "fetch_failed: URLError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-05T00:00:00Z"
+  "fetched": "2026-07-11T11:43:46Z"
 }
