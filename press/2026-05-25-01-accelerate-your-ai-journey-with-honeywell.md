@@ -1,7 +1,9 @@
 ---
 title: Accelerate Your AI Journey with Honeywell
 url: https://www.honeywell.com/us/en/ai
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Honeywell International" press release artificial intelligence'
 position: 1
 source: serpapi-google

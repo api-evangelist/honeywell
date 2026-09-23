@@ -1,7 +1,9 @@
 ---
 title: 'Industrial AI Insights: Key Findings from Honeywell'
 url: https://www.honeywell.com/us/en/ai/research
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Honeywell International" press release artificial intelligence'
 position: 3
 source: serpapi-google
