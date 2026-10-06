@@ -34,7 +34,7 @@ tags:
   - Fortune 100
   - Industrial
 created: '2026-03-21'
-modified: '2026-04-28'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 description: >-
   Honeywell is a Fortune 100 technology company that delivers industry-specific
@@ -64,6 +64,8 @@ apis:
       typically partner-gated and requires registration through the
       Honeywell developer portal.
 common:
+  - url: https://www.honeywell.com/us/en/news
+    type: Blog
   - type: DomainSecurity
     url: security/honeywell-domain-security.yml
   - type: GitHubOrganization
