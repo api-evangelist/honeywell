@@ -132,10 +132,8 @@ apis:
 unitEconomics:
   - name: Cost per Connected Asset
     metric: subscription_fee / connected_assets
-    target: per enterprise agreement
   - name: Cost per Site
     metric: subscription_fee / sites
-    target: per enterprise agreement
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
