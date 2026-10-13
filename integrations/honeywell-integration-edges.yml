@@ -1,43 +1,4 @@
 edges:
-- partner_name: OpenADR
-  partner: null
-  type: contract
-  channel: network-directory
-  relationship: standard-participant
-  direction: partner-built
-  evidence: https://products.openadr.org/
-  contract_reference:
-    register: OpenADR Alliance certified product database
-    spec_file: null
-    role: certified-product
-    registered_name: Honeywell International Inc.
-    matched_domain: honeywell.com
-    certified_products:
-    - product: Connected Power
-      type: VEN
-      lapsed: false
-      profile: 2.0a
-      page: https://products.openadr.org/product/honeywell-international-inc-connected-power/
-    - product: Honeywell DemandSites™
-      type: VEN
-      lapsed: false
-      profile: 2.0b
-      page: https://products.openadr.org/product/honeywell-international-inc-honeywell-demandsites/
-    - product: Opus Magnum
-      type: VEN (client)
-      lapsed: false
-      profile: 2.0a
-      page: https://products.openadr.org/product/honeywell-international-inc-novar-opus-bas/
-    - product: TC500A-N
-      type: VEN
-      lapsed: false
-      profile: 2.0b
-      page: https://products.openadr.org/product/honeywell-tc500a-n/
-    profiles:
-    - 2.0a
-    - 2.0b
-    detected_by: sweep-energy.py
-    detected: '2026-10-13'
 - partner_name: Microsoft Azure Marketplace
   partner: microsoft-azure
   partner_match: aggregator
@@ -106,6 +67,45 @@ edges:
   seller_name: Honeywell
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: OpenADR
+  partner: null
+  type: contract
+  channel: network-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://products.openadr.org/
+  contract_reference:
+    register: OpenADR Alliance certified product database
+    spec_file: null
+    role: certified-product
+    registered_name: Honeywell International Inc.
+    matched_domain: honeywell.com
+    certified_products:
+    - product: Connected Power
+      type: VEN
+      lapsed: false
+      profile: 2.0a
+      page: https://products.openadr.org/product/honeywell-international-inc-connected-power/
+    - product: Honeywell DemandSites™
+      type: VEN
+      lapsed: false
+      profile: 2.0b
+      page: https://products.openadr.org/product/honeywell-international-inc-honeywell-demandsites/
+    - product: Opus Magnum
+      type: VEN (client)
+      lapsed: false
+      profile: 2.0a
+      page: https://products.openadr.org/product/honeywell-international-inc-novar-opus-bas/
+    - product: TC500A-N
+      type: VEN
+      lapsed: false
+      profile: 2.0b
+      page: https://products.openadr.org/product/honeywell-tc500a-n/
+    profiles:
+    - 2.0a
+    - 2.0b
+    detected_by: sweep-energy.py
+    detected: '2026-10-13'
 generated: '2026-10-13'
 method: searched
 checked:
