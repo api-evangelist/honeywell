@@ -1,72 +1,4 @@
 edges:
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: platform-app
-  direction: provider-built
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell%20-%20non%20US
-  listing_count: 8
-  apps:
-  - Honeywell Forge for Industrials | Asset Performance Management
-  - Honeywell Forge Performance+ for Industrials | Production Intelligence
-  - Honeywell Forge Performance+ for Buildings | Carbon and Energy Management
-  - Honeywell Forge Sustainability+ for Industrials | Emissions Management
-  - Honeywell Remote Building Management
-  seller_name: Honeywell - non US
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: platform-app
-  direction: provider-built
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell%20-%20US
-  listing_count: 8
-  apps:
-  - Honeywell Forge for Industrials | Asset Performance Management
-  - Honeywell Forge Sustainability+ for Industrials | Emissions Management
-  - Honeywell Forge Performance+ for Industrials | Production Intelligence
-  - Process Digital Twin
-  - Honeywell Forge Performance+ for Buildings | Carbon and Energy Management
-  seller_name: Honeywell - US
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: platform-app
-  direction: provider-built
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell
-  listing_count: 1
-  apps:
-  - Honeywell Prowatch Access
-  seller_name: Honeywell
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: platform-app
-  direction: provider-built
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell
-  listing_count: 1
-  apps:
-  - Honeywell Quantum Solutions
-  seller_name: Honeywell
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
 - partner_name: OpenADR
   partner: null
   type: contract
@@ -106,6 +38,74 @@ edges:
     - 2.0b
     detected_by: sweep-energy.py
     detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell%20-%20non%20US
+  listing_count: 8
+  apps:
+  - Honeywell Forge for Industrials | Asset Performance Management
+  - Honeywell Forge Performance+ for Industrials | Production Intelligence
+  - Honeywell Forge Performance+ for Buildings | Carbon and Energy Management
+  - Honeywell Forge Sustainability+ for Industrials | Emissions Management
+  - Honeywell Remote Building Management
+  seller_name: Honeywell - non US
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell%20-%20US
+  listing_count: 8
+  apps:
+  - Honeywell Forge for Industrials | Asset Performance Management
+  - Honeywell Forge Sustainability+ for Industrials | Emissions Management
+  - Honeywell Forge Performance+ for Industrials | Production Intelligence
+  - Process Digital Twin
+  - Honeywell Forge Performance+ for Buildings | Carbon and Energy Management
+  seller_name: Honeywell - US
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell
+  listing_count: 1
+  apps:
+  - Honeywell Prowatch Access
+  seller_name: Honeywell
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Honeywell
+  listing_count: 1
+  apps:
+  - Honeywell Quantum Solutions
+  seller_name: Honeywell
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 generated: '2026-10-13'
 method: searched
 checked:
