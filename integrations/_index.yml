@@ -88,3 +88,115 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: honeywell-bacnet-testing-laboratories-btl-listed
+  label: BACnet Testing Laboratories (BTL Listed)
+  partner_name: BACnet Testing Laboratories (BTL Listed)
+  category: building automation
+  type: register
+  channel: standard-directory
+  evidence: https://www.bacnetinternational.net/btl/?m=21
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: BTL Listing of Tested Products (bacnetinternational.net/btl)
+    spec_file: null
+    standard: BACnet (BTL)
+    role: btl-listed-manufacturer
+    registered_name: Honeywell International
+    website: http://www.honeywell.com/
+    matched_domain: honeywell.com
+    matched_by: domain
+    btl_manufacturer_ids:
+    - '21'
+    certified_products:
+    - product: BACnet Advanced Operator Workstation (B-AWS)
+      lapsed: false
+      listed_products:
+      - CentraLine Arena NX Building Management Supervisor
+      - Honeywell Enterprise Buildings Integrator™
+      - SymmetrE™
+      - WEBs N4 Supervisor BACnet Advanced Workstation
+    - product: BACnet Building Controller (B-BC)
+      lapsed: false
+      listed_products:
+      - CIPer30
+      - CIPer50
+      - CentraLine EAGLEHAWK NX
+      - CentraLine HAWK 8000 Integration Controller
+      - Edge Control Series
+      - HBS Comfort Point NX
+      - HON-9000
+      - Honeywell ComfortPointTM Open Plant Controller
+      - Honeywell ComfortPoint™ Open Plant Controller
+      - Honeywell WEB-8000 Controller
+      - Honeywell WEB-8000 Series Controller
+      - IQX12
+    - product: BACnet Advanced Application Controller (B-AAC)
+      lapsed: false
+      listed_products:
+      - BACnet MSTP, IP and T1L Unitary Controller
+      - BACnet MSTP, IP and T1L VAV Controller
+      - ComfortPoint™ Open Digital I/O Controller
+      - ComfortPoint™ Open Small Point Controller
+      - ComfortPoint™ Open Variable Air Volume Controller
+      - Honeywell Comfort Point™ Open IRM Controller
+      - Honeywell ComfortPoint Open Compact VAV Controller
+      - Honeywell INNCOM RCU
+      - Programmable Enhanced BACnet IP Controller
+    - product: BACnet Advanced Life Safety Workstation (B-ALSWS)
+      lapsed: false
+      listed_products:
+      - Honeywell Enterprise Buildings Integrator™
+    - product: BACnet Application Specific Controller (B-ASC)
+      lapsed: false
+      listed_products:
+      - 961 series BACnet Thermostat Driver
+      - BACnet Fixed Function Thermostat
+      - HT9631D Series Driver
+      - Honeywell SmartVFD
+      - Honeywell TC300 Thermostats
+      - Honeywell TC500A Commercial Thermostat | Room Pressure Indicator | Fume Hood Display
+      - Honeywell TR100 Wall Module
+      - O3-BACnet
+      - PUC Series for BACnet MS/TP
+      - Programmable Unitary Controller
+      - Spyder
+      - Spyder Micro BACnet
+    - product: BACnet Smart Sensor (B-SS)
+      lapsed: false
+      listed_products:
+      - 301C Controller, AirAlert 96D
+      - Class 3200 Meter
+      - Class 3400 Meter
+      - Class 5000 Meter
+      - Class Green Net
+      - Din-Mon
+      - Din-Mon Advanced Meter
+      - Honeywell Smart Sensor
+      - IAQPoint2
+      - Interval Data Recorder (IDR)
+    - product: BACnet Router (B-RTR)
+      lapsed: false
+      listed_products:
+      - Edge Control Series
+      - HON-9000
+    - product: BACnet Gateway (B-GW)
+      lapsed: false
+      listed_products:
+      - HON-9000
+    - product: BACnet Broadcast Management Device (B-BBMD)
+      lapsed: false
+      listed_products:
+      - Edge Control Series
+      - HON-9000
+    - product: BACnet Secure Connect Hub (B-SCHUB)
+      lapsed: false
+      listed_products:
+      - HON-9000
+    signal_note: certified_products = one entry per BACnet DEVICE PROFILE with a BTL-listed product (the product
+      type); product names are context, never a count; current listing only (archives.php superseded listings not
+      read)
+    detected_by: sweep-building-automation.py
+    detected: '2026-10-15'
+  status: not-a-workflow
+  arazzo: null
