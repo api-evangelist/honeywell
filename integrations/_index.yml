@@ -57,35 +57,17 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
-- slug: honeywell-opc-foundation-opc-ua
-  label: OPC Foundation (OPC UA)
-  partner_name: OPC Foundation (OPC UA)
-  category: OPC UA products
-  type: register
-  channel: standard-directory
-  evidence: https://opcfoundation.org/products/view/controledge-plc/
+- slug: honeywell-microsoft-teams-own
+  label: Microsoft Teams (own)
+  partner: microsoft-teams
+  partner_name: Microsoft Teams (own)
+  category: Microsoft Teams app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://appsource.microsoft.com/en-us/product/office/WA200003820
   source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: OPC Foundation product marketplace (opcfoundation.org/products)
-    spec_file: null
-    standard: OPC UA
-    role: OPC UA product listed
-    registered_name: Honeywell Inc
-    member_id: '174'
-    website: http://www.honeywell.com/ps
-    matched_domain: honeywell.com
-    matched_by: domain
-    listed_products: 1
-    certified_products: []
-    listed_categories:
-    - Controller
-    sample_products:
-    - Honeywell Inc ControlEdge™ PLC Show details
-    signal_note: certified_products = one entry per product CATEGORY with a certified product (diversity), never
-      per product; listed_products is context, never read
-    detected_by: sweep-industrial-robotics.py
-    detected: '2026-10-15'
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
 - slug: honeywell-bacnet-testing-laboratories-btl-listed
@@ -197,19 +179,37 @@
       type); product names are context, never a count; current listing only (archives.php superseded listings not
       read)
     detected_by: sweep-building-automation.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
-- slug: honeywell-microsoft-teams-own
-  label: Microsoft Teams (own)
-  partner: microsoft-teams
-  partner_name: Microsoft Teams (own)
-  category: Microsoft Teams app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://appsource.microsoft.com/en-us/product/office/WA200003820
+- slug: honeywell-opc-foundation-opc-ua
+  label: OPC Foundation (OPC UA)
+  partner_name: OPC Foundation (OPC UA)
+  category: OPC UA products
+  type: register
+  channel: standard-directory
+  evidence: https://opcfoundation.org/products/view/controledge-plc/
   source: edge
-  relationship: platform-app
+  relationship: standard-participant
+  contract_reference:
+    register: OPC Foundation product marketplace (opcfoundation.org/products)
+    spec_file: null
+    standard: OPC UA
+    role: OPC UA product listed
+    registered_name: Honeywell Inc
+    member_id: '174'
+    website: http://www.honeywell.com/ps
+    matched_domain: honeywell.com
+    matched_by: domain
+    listed_products: 1
+    certified_products: []
+    listed_categories:
+    - Controller
+    sample_products:
+    - Honeywell Inc ControlEdge™ PLC Show details
+    signal_note: certified_products = one entry per product CATEGORY with a certified product (diversity), never
+      per product; listed_products is context, never read
+    detected_by: sweep-industrial-robotics.py
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null

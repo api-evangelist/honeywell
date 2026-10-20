@@ -1,0 +1,37 @@
+name: Honeywell regulatory posture
+generated: '2026-10-20'
+method: searched
+source: https://www.honeywell.com/us/en/company/trust
+signals:
+  subprocessors:
+    url: https://www.honeywell.com/us/en/legal/subprocessors
+    type: Subprocessors
+    evidence:
+    - source: https://www.honeywell.com/us/en/legal/subprocessors
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: page titled "Honeywell Forge Subprocessors | Legal Terms | Honeywell" (HTTP 200, 2026-10-20)
+  data_subject_request:
+    url: https://hon-opcenter.my.salesforce-sites.com/PrivacyInformationRequestForm?lang=en
+    type: DataSubjectRequest
+    evidence:
+    - source: https://www.honeywell.com/us/en/company/trust
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: privacy information request form linked from the Trust Center
+  incident_notification:
+    url: https://www.honeywell.com/us/en/legal/product-security
+    type: IncidentNotification
+    evidence:
+    - source: https://www.honeywell.com/us/en/legal/product-security
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: The Cyber Resilience Act requires manufacturers to report actively exploited vulnerabilities and severe incidents to ENISA within the timelines defined below.
+  ai_transparency:
+    url: https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-honeywell-responsible-ai-principles.pdf
+    type: AITransparency
+    evidence:
+    - source: https://www.honeywell.com/us/en/company/trust
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: Responsible AI Principles document linked from the Trust Center

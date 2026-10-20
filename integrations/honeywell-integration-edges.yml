@@ -1,3 +1,32 @@
+generated: '2026-10-20'
+method: searched
+source:
+- https://opcfoundation.org/products/
+- https://marketplace.odva.org/organizations
+- https://zapier.com/apps/honeywell/integrations
+- https://n8n.io/integrations/honeywell/
+- https://composio.dev/toolkits/honeywell
+- https://monid.ai/tools/honeywell
+checked:
+- https://azuremarketplace.microsoft.com/
+- https://brickschema.org/consortium/
+- https://marketing.project-haystack.org/about-us
+- https://marketplace.odva.org/organizations
+- https://opcfoundation.org/products/
+- https://products.openadr.org/
+- https://repo.ros2.org/rosdistro_cache/humble-cache.yaml.gz
+- https://repo.ros2.org/rosdistro_cache/jazzy-cache.yaml.gz
+- https://repo.ros2.org/rosdistro_cache/kilted-cache.yaml.gz
+- https://repo.ros2.org/rosdistro_cache/rolling-cache.yaml.gz
+- https://www.bacnetinternational.net/btl/
+- https://www.knx.org/community/manufacturers
+- microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+- https://composio.dev/toolkits/honeywell
+- https://monid.ai/tools/honeywell
+- https://n8n.io/integrations/honeywell/
+- https://zapier.com/apps/honeywell/integrations
+summary: null
+marketplace_apps: []
 edges:
 - partner_name: OpenADR
   partner: null
@@ -106,37 +135,25 @@ edges:
   seller_name: Honeywell
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
-- partner_name: OPC Foundation (OPC UA)
-  partner: null
-  partner_match: register
-  type: register
-  direction: partner-built
-  evidence: https://opcfoundation.org/products/view/controledge-plc/
-  category: OPC UA products
-  channel: standard-directory
-  relationship: standard-participant
-  contract_reference:
-    register: OPC Foundation product marketplace (opcfoundation.org/products)
-    spec_file: null
-    standard: OPC UA
-    role: OPC UA product listed
-    registered_name: Honeywell Inc
-    member_id: '174'
-    website: http://www.honeywell.com/ps
-    matched_domain: honeywell.com
-    matched_by: domain
-    listed_products: 1
-    certified_products: []
-    listed_categories:
-    - Controller
-    sample_products:
-    - Honeywell Inc ControlEdge™ PLC Show details
-    signal_note: certified_products = one entry per product CATEGORY with a certified product (diversity), never
-      per product; listed_products is context, never read
-    detected_by: sweep-industrial-robotics.py
-    detected: '2026-10-15'
-  detected_by: sweep-industrial-robotics.py
-  first_seen: '2026-10-15'
+- partner_name: Microsoft Teams (own)
+  partner: microsoft-teams
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://appsource.microsoft.com/en-us/product/office/WA200003820
+  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+  apps:
+  - BGA Notify
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Microsoft Teams app
+  publisher_verified:
+  - Microsoft 365 Certified
 - partner_name: BACnet Testing Laboratories (BTL Listed)
   partner: null
   partner_match: register
@@ -246,7 +263,7 @@ edges:
       type); product names are context, never a count; current listing only (archives.php superseded listings not
       read)
     detected_by: sweep-building-automation.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-building-automation.py
   first_seen: '2026-10-15'
 - partner_name: BACnet Testing Laboratories (BTL Listed)
@@ -270,45 +287,38 @@ edges:
     registered_name: Honeywell International
     matched_domain: honeywell.com
     detected_by: sweep-building-automation.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-building-automation.py
   first_seen: '2026-10-15'
-- partner_name: Microsoft Teams (own)
-  partner: microsoft-teams
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://appsource.microsoft.com/en-us/product/office/WA200003820
-  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
-  apps:
-  - BGA Notify
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Microsoft Teams app
-  publisher_verified:
-  - Microsoft 365 Certified
-generated: '2026-10-13'
-method: searched
-checked:
-- https://azuremarketplace.microsoft.com/
-- https://brickschema.org/consortium/
-- https://marketing.project-haystack.org/about-us
-- https://marketplace.odva.org/organizations
-- https://opcfoundation.org/products/
-- https://products.openadr.org/
-- https://repo.ros2.org/rosdistro_cache/humble-cache.yaml.gz
-- https://repo.ros2.org/rosdistro_cache/jazzy-cache.yaml.gz
-- https://repo.ros2.org/rosdistro_cache/kilted-cache.yaml.gz
-- https://repo.ros2.org/rosdistro_cache/rolling-cache.yaml.gz
-- https://www.bacnetinternational.net/btl/
-- https://www.knx.org/community/manufacturers
-- microsoft-teams/integrations/microsoft-teams-integration-edges.yml
-marketplace_apps: []
-source:
-- https://opcfoundation.org/products/
-- https://marketplace.odva.org/organizations
+- partner_name: OPC Foundation (OPC UA)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://opcfoundation.org/products/view/controledge-plc/
+  category: OPC UA products
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: OPC Foundation product marketplace (opcfoundation.org/products)
+    spec_file: null
+    standard: OPC UA
+    role: OPC UA product listed
+    registered_name: Honeywell Inc
+    member_id: '174'
+    website: http://www.honeywell.com/ps
+    matched_domain: honeywell.com
+    matched_by: domain
+    listed_products: 1
+    certified_products: []
+    listed_categories:
+    - Controller
+    sample_products:
+    - Honeywell Inc ControlEdge™ PLC Show details
+    signal_note: certified_products = one entry per product CATEGORY with a certified product (diversity), never
+      per product; listed_products is context, never read
+    detected_by: sweep-industrial-robotics.py
+    detected: '2026-10-19'
+  detected_by: sweep-industrial-robotics.py
+  first_seen: '2026-10-15'
+templates: []

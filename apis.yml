@@ -1,7 +1,11 @@
 aid: honeywell
+
 name: Honeywell
+
 url: https://raw.githubusercontent.com/api-evangelist/honeywell/refs/heads/main/apis.yml
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -13,6 +17,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -25,7 +30,9 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/honeywell.png
+
 tags:
   - Aerospace
   - Building Automation
@@ -33,37 +40,56 @@ tags:
   - Manufacturing
   - Fortune 100
   - Industrial
+  - Cybersecurity
+
 created: '2026-03-21'
+
 modified: '2026-10-06'
+
 specificationVersion: '0.23'
+
 description: >-
   Honeywell is a Fortune 100 technology company that delivers industry-specific
   solutions including aerospace products and services, control technologies,
   performance materials, and safety and productivity solutions. Honeywell
   Forge is the company's connected platform for building automation,
   industrial IoT, and aerospace data integration.
-apis:
-  - aid: honeywell:honeywell-forge
-    name: Honeywell Forge
-    tags:
-      - Aerospace
-      - Building Automation
-      - Industrial IoT
-      - Manufacturing
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.honeywell.com/
-    properties:
-      - url: https://developer.honeywell.com/
-        type: Documentation
-      - url: https://www.honeywell.com/us/en/products/services/honeywell-forge
-        type: Website
-    description: >-
-      Honeywell Forge is the connected enterprise platform that provides
-      developer integration capabilities for building automation, industrial
-      IoT, aerospace data, and connected building management. Access is
-      typically partner-gated and requires registration through the
-      Honeywell developer portal.
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
 common:
+  - type: JSONLD
+    url: json-ld/honeywell-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/honeywell-vocabulary.yml
+  - type: Compliance
+    url: https://www.honeywell.com/us/en/company/trust
+  - type: TrustCenter
+    url: security/honeywell-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/honeywell-vulnerability-disclosure.yml
+  - type: WellKnown
+    url: well-known/honeywell-well-known.yml
+  - type: Hosts
+    url: hosts/honeywell-hosts.yml
+  - type: IntegrationEdges
+    url: integrations/honeywell-integration-edges.yml
+  - type: Vendors
+    url: vendors/honeywell-vendors.yml
+  - type: TrustCenter
+    url: https://www.honeywell.com/us/en/company/trust
+  - type: SignUp
+    url: https://buildings.honeywell.com/us/en/home/my-hbt/register
+  - type: Security
+    url: https://buildings.honeywell.com/us/en/solutions/security
+  - type: Newsroom
+    url: https://www.honeywell.com/us/en/news
+  - type: Leadership
+    url: https://www.honeywell.com/us/en/company/leadership
+  - type: GettingStarted
+    url: https://www.honeywell.com/us/en/news/press-releases/2024/07/industrial-ai-uptake-is-just-getting-started-but-majority-of-sector-is-uncovering-new-use-cases-finds-honeywell-research
   - type: Plans
     url: plans/honeywell-plans-pricing.yml
   - type: RateLimits
@@ -80,8 +106,49 @@ common:
     url: https://www.linkedin.com/company/honeywell
   - url: https://www.honeywell.com
     type: Website
-  - url: https://developer.honeywell.com/
-    type: DeveloperPortal
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+  - url: https://www.honeywell.com/us/en/legal/terms-and-conditions
+    type: TermsOfService
+  - url: https://www.honeywell.com/us/en/legal/privacy-statement
+    type: PrivacyPolicy
+  - url: https://www.honeywell.com/us/en/support
+    type: Support
+  - url: https://www.honeywell.com/us/en/insights/research/guides
+    type: Documentation
+
+apis:
+  - aid: honeywell:honeywell-forge
+    name: Honeywell Forge
+    tags:
+      - Aerospace
+      - Building Automation
+      - Industrial IoT
+      - Manufacturing
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+    humanURL: https://www.honeywell.com/us/en/honeywell-forge
+    properties:
+      - url: https://www.honeywell.com/us/en/honeywell-forge
+        type: Website
+    description: >-
+      Honeywell Forge is the connected enterprise platform that provides
+      developer integration capabilities for building automation, industrial
+      IoT, aerospace data, and connected building management. Access is
+      typically partner-gated; the former developer portal host
+      developer.honeywell.com no longer resolves in DNS (2026-10-20) and no
+      public API reference, base URL or contract is published.
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.honeywell.com
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v5

@@ -1,0 +1,26 @@
+name: Honeywell trust center
+generated: '2026-10-20'
+method: searched
+source: https://www.honeywell.com/us/en/company/trust
+url: https://www.honeywell.com/us/en/company/trust
+certifications:
+- ISO/IEC 27001
+- ISO/IEC 27001 (Connected Logistics)
+- ISA/IEC 62443 SDLA (secure development lifecycle)
+- ISO/IEC 20000-1 (Managed Security Services, Houston TX)
+- CSA STAR registry entry (Honeywell Forge)
+documents:
+- https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-honeywell-data-processing-agreement-for-customers.pdf
+- https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-honeywell-responsible-ai-principles.pdf
+- https://www.honeywell.com/us/en/company/trust/eu-cra
+certification_evidence:
+- name: ISO/IEC 27001
+  evidence: https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-trust-honeywell-iso27001-certificate-award-11-7-2025.pdf
+- name: ISO/IEC 27001 (Connected Logistics)
+  evidence: https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-trust-connected-logistics-iso-27001-certificate-apr-2026.pdf
+- name: ISA/IEC 62443 SDLA (secure development lifecycle)
+  evidence: https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-trust-2103121-c001-r20-sdla-3-0-0-certificate.pdf
+- name: ISO/IEC 20000-1 (Managed Security Services, Houston TX)
+  evidence: https://www.honeywell.com/content/dam/honcorp/us-en/company/trust/documents/hon-trust-international-inc-managed-security-services-houston-tx-20000-1-2018.pdf
+- name: CSA STAR registry entry (Honeywell Forge)
+  evidence: https://cloudsecurityalliance.org/star/registry/honeywell-connected-enterprise/services/honeywell-forge

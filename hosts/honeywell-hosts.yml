@@ -1,0 +1,200 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 17
+  own: 15
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - identity
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.honeywell.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: api
+  relation: own
+- host: authn.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: automation.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: buildings.honeywell.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  - vendor-detect
+  types:
+  - SignUp
+  - Security
+  serves:
+  - cdn
+  vendor: akamai
+  registrable_domain: honeywell.com
+  role: identity
+  relation: own
+- host: c3.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: careers.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: developer.honeywell.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: portal
+  relation: own
+- host: ess.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: explore.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: hbtmkto.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: investor.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: pages1.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: process.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: prod-edam.honeywell.com
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: honeywell.com
+  role: other
+  relation: own
+- host: www.honeywell.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Compliance
+  - TrustCenter
+  - Newsroom
+  - Leadership
+  - GettingStarted
+  - Blog
+  - Website
+  - TermsOfService
+  - PrivacyPolicy
+  - Support
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: honeywell.com
+  role: website
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
