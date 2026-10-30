@@ -1,4 +1,4 @@
-# Honeywell (honeywell)
+# Honeywell
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,47 +66,124 @@
 
 Honeywell is a Fortune 100 technology company that delivers industry-specific solutions including aerospace products and services, control technologies, performance materials, and safety and productivity solutions. Honeywell Forge is the company's connected platform for building automation, industrial IoT, and aerospace data integration.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/honeywell/refs/heads/main/apis.yml)
+**Areas:** Aerospace · Building Automation · Industrial IoT · Manufacturing · Fortune 100 · Industrial · Cybersecurity
 
-## Scope
+## Honeywell on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Honeywell is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/honeywell/](https://apis.io/providers/honeywell/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Aerospace, Building Automation, Industrial IoT, Manufacturing
+- [Honeywell Forge](https://apis.io/apis/honeywell/honeywell-forge/) — Honeywell Forge is the connected enterprise platform that provides developer integration capabilities for building automation, industrial IoT, aerospace…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### Honeywell Forge
-Honeywell Forge is the connected enterprise platform that provides developer integration capabilities for building automation, industrial IoT, aerospace data, and connected building management. Access is typically partner-gated and requires registration through the Honeywell developer portal.
+Linked-data contexts for the provider's vocabulary.
 
-**Human URL:** [https://developer.honeywell.com/](https://developer.honeywell.com/)
+- [Honeywell Context](https://apis.io/jsonld/honeywell/honeywell-context/)
 
+#### Vocabulary (1)
 
-#### Tags:
+The provider's domain terms, defined.
 
- - Aerospace, Building Automation, Industrial IoT, Manufacturing
+- [Honeywell Industrial Technology Vocabulary](https://apis.io/vocabularies/honeywell/honeywell-vocabulary/)
 
-#### Properties
+#### Security (3)
 
-- [Documentation](https://developer.honeywell.com/)
-- [Website](https://www.honeywell.com/us/en/products/services/honeywell-forge)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Honeywell Domain Security](https://apis.io/security/honeywell/honeywell-domain-security/)
+- [Honeywell Trust Center](https://apis.io/security/honeywell/honeywell-trust-center/)
+- [Honeywell Vulnerability Disclosure](https://apis.io/security/honeywell/honeywell-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Honeywell Plans Pricing](https://apis.io/plans/honeywell/honeywell-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Honeywell Rate Limits](https://apis.io/rate-limits/honeywell/honeywell-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Honeywell Finops](https://apis.io/finops/honeywell/honeywell-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.honeywell.com)
-- [DeveloperPortal](https://developer.honeywell.com/)
+- [Documentation](https://www.honeywell.com/us/en/insights/research/guides)
+- [Getting started](https://www.honeywell.com/us/en/news/press-releases/2024/07/industrial-ai-uptake-is-just-getting-started-but-majority-of-sector-is-uncovering-new-use-cases-finds-honeywell-research)
+- [Sign up](https://buildings.honeywell.com/us/en/home/my-hbt/register)
+- [Support](https://www.honeywell.com/us/en/support)
+- [Blog](https://www.honeywell.com/us/en/news)
+- [Security](https://buildings.honeywell.com/us/en/solutions/security)
+- [Compliance](https://www.honeywell.com/us/en/company/trust)
+- [Trust centre](https://www.honeywell.com/us/en/company/trust)
+- [Terms of service](https://www.honeywell.com/us/en/legal/terms-and-conditions)
+- [Privacy policy](https://www.honeywell.com/us/en/legal/privacy-statement)
+- [GitHub](https://github.com/Honeywell)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 33.6** — thin · rubric 0.24.0 · scored 2026-10-20
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 60.7 |
+| Contract quality | 14.7 |
+| Contract governance | 13.6 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 55.3 |
+
+**Agent readiness 15.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/honeywell/](https://apis.io/providers/honeywell/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Honeywell: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/honeywell/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
