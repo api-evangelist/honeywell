@@ -1,0 +1,97 @@
+name: Honeywell API Plans
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Honeywell
+providerId: honeywell
+created: '2026-05-04'
+# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
+# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
+method: generated
+modified: '2026-05-05'
+reconciled: false
+tags:
+  - Aerospace
+  - Building Automation
+  - Industrial IoT
+  - Manufacturing
+notes: Honeywell sells industrial / aerospace / building-automation products and software (Honeywell Forge,
+  Honeywell Connected Enterprise) with enterprise pricing rather than self-serve API tiers. There is no
+  public per-tier API price list; pricing is quoted by sales for Forge subscriptions, connected-asset
+  programs, and aerospace data services. Public web fetches of Honeywell Forge documentation timed out at
+  the time of generation, so this artifact is left as an unreconciled stub pending direct vendor disclosure.
+sources:
+  - https://www.honeywell.com/us/en
+description: Honeywell does not publish public API pricing. Honeywell Forge, Connected Enterprise, and
+  aerospace data services are sold under enterprise contracts.
+plans:
+  - id: honeywell-enterprise
+    name: Enterprise / Honeywell Forge Subscription
+    type: enterprise
+    description: API and data integrations with Honeywell Forge and Honeywell Connected Enterprise are
+      sold as enterprise subscriptions. Pricing depends on connected-asset count, site count, industry
+      vertical (buildings, industrial, aerospace), and bundled software modules; not publicly disclosed.
+    entries:
+      - label: Forge Subscription
+        description: Annual subscription for Honeywell Forge; price quoted by Honeywell sales
+        name: forge_subscription
+        type: subscription
+        metric: month
+        limit: -1
+        timeFrame: year
+        geo: global
+        domains: []
+        unit: 1
+        price: 'contact sales'
+        userMultiplied: false
+      - label: Connected Asset Fee
+        description: Per-asset / per-device fee for connected industrial or building assets
+        name: connected_asset_fee
+        type: metered
+        metric: asset
+        limit: -1
+        timeFrame: month
+        geo: global
+        domains: []
+        unit: 1
+        price: 'contact sales'
+        userMultiplied: false
+      - label: API Access
+        description: API access included with active Forge or Connected Enterprise subscription
+        name: api_access
+        type: quota
+        metric: requests
+        limit: -1
+        timeFrame: month
+        geo: global
+        domains: []
+        unit: 1
+        price: 'included with subscription'
+        userMultiplied: false
+    elements:
+      - name: Enterprise Onboarding Required
+      - name: Bilateral Agreement
+      - name: Honeywell Forge
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - period
+  - request
+  plans:
+  - name: Enterprise / Honeywell Forge Subscription
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    - period
+    - request
+    periods:
+    - month
+    - year
